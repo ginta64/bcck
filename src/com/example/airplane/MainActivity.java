@@ -7,6 +7,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -93,7 +94,15 @@ int index = 0;
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
+	@Override
+	protected void onStart() {
+		SharedPreferences settings = getSharedPreferences("AppConfig",
+				MODE_PRIVATE);
+		int integerValue = settings.getInt("IntegerKey", 10);
+		Record.setText(String.valueOf(integerValue));
 
+		super.onStart();
+	}
 	public void Information() {
 		String str_info = "";
 		

@@ -60,15 +60,15 @@ public class Mig29 extends EnemyPlane {
 	}
 	public void onLoadResourcesR(Context context)
 	{
-		this._texture = new AssetTexture("mig29/mig293.png", context);
+		this._texture = new AssetTexture("mig29/mig294.png", context);
 	}
 	public void onLoadResourcesRD(Context context)
 	{
-		this._texture = new AssetTexture("mig29/mig294.png", context);
+		this._texture = new AssetTexture("mig29/mig295.png", context);
 	}
 	public void onLoadResourcesLD(Context context)
 	{
-		this._texture = new AssetTexture("mig29/mig295.png", context);
+		this._texture = new AssetTexture("mig29/mig293.png", context);
 	}
 	public void onLoadScene()
 	{

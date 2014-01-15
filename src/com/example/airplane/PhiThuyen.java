@@ -21,7 +21,7 @@ public class PhiThuyen {
 	public ArrayList<Dan> Dan3 = new ArrayList<Dan>();
 	
 	int VP ;
-	int m_Life = 5;
+	int m_Life = 10;
 	public PhiThuyen()
 	{
 		x = 300;

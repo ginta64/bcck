@@ -36,7 +36,7 @@ public class background {
 	}
 
 	public void onLoadResourcesD(Context context) {
-		this.background1 = new AssetTexture("sky2.png", context);
+		this.background1 = new AssetTexture("sky3.png", context);
 
 	}
 
